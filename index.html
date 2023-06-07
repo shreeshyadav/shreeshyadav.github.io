@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     </head>
-    <body style="background-color: #1b1b1c;color: white;">
+    <body  onLoad="prepareContent()" style="color: white;">
         <div class="splash container-fluid ">
            
             <div class="row ">
@@ -35,17 +35,17 @@
                         <a href="#about-me" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#education" class="nav-link">Work Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#projects" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#skills" class="nav-link">Projects</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Skills</a>
                     </li>
                 </ul>
             </div>
@@ -76,12 +76,13 @@
             <button type="button" id="workexButton" onclick="subheadingButtonClick(this);" class="section-button gradient-custom">Work Experience</i></button>
             <button type="button" id="educationButton" onclick="subheadingButtonClick(this);" class="section-button">Education</button>
             <button type="button" id="projectsButton" onclick="subheadingButtonClick(this);" class="section-button">Projects</button>
+            <button type="button" id="skillsButton" onclick="subheadingButtonClick(this);" class="section-button">Skills</button>
         </div>
         <div id="workexButtonContent" class="container py-5">
             <div class="main-timeline-4 text-white">
               <div class="timeline-4 left-4">
                 <div class="card gradient-custom">
-                  <div class="card-body p-4">
+                  <div class="card-body p-4" >
                     <h4>Associate Software Engineer, Fidelity Investments</h4>
                     <p class="small text-white-50 mb-4">August, 2022 - July, 2023</p>
                     <p>Responsible for designing and developing a full stack web application that handles flow of Fidelity's Institutional
@@ -93,7 +94,7 @@
               </div>
               <div class="timeline-4 right-4">
                 <div class="card gradient-custom-4">
-                  <div class="card-body p-4">
+                  <div class="card-body p-4" >
                     <h4>Software Engineer Intern, Fidelity Investments</h4>
                     <p class="small text-white-50 mb-4">January, 2022 - June, 2022</p>
                     <p>Worked with the Workplace Inveting team.
@@ -103,7 +104,7 @@
               </div>
               <div class="timeline-4 left-4">
                 <div class="card gradient-custom">
-                  <div class="card-body p-4">
+                  <div class="card-body p-4" >
                     <h4>Software Engineer Intern, Fidelity Investments</h4>
                     <p class="small text-white-50 mb-4">May 6</p>
                     <p>Worked with the Workplace Investment team.
@@ -117,8 +118,138 @@
           </div>
          
         </div>
+        
+        
+        <div id="educationButtonContent" class="container py-5">
+            <div class="main-timeline-4 text-white">
+              <div class="timeline-4 left-4">
+                <div class="card gradient-custom">
+                  <div class="card-body p-4" style="background-image: url('assets/images/USC_Trojans_logo.svg.png');background-size: contain;background-repeat:no-repeat;background-position: right;">
+                    <h4 >University of Southern California</h4>
+                    <p class="small text-white-50 mb-4">Los Angeles, Califonia</p>
+                    <p>Pursuing my Masters of Science in Computer Science.
+                    </p>
+                    <p class="small text-white-50">August, 2023 - May, 2025</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-4 right-4">
+                <div class="card gradient-custom-4 ">
+                  <div class="card-body p-4" style="background-image: url('assets/images/vit.png');background-size: contain;background-repeat:no-repeat;background-position: right;">
+                    <h4>Vellore Institute of Technology</h4>
+                    <p class="small text-white-50 mb-4">Vellore, India</p>
+                    <p>Completed my Bachelors in Computer Science and Engineering
+                    </p>
+                    <p class="small text-white-50">July, 2018 - May, 2022</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+         
+        <div id="projectsButtonContent" style="padding:60px;">
+            <div class="container">
+                
+                    <div class="d-flex justify-content-around">
+                        <div class="card gradient-custom-4 p-1" style="width: 18rem; background-color: #1b1b1c;">
+                            <div class="card-body">
+                              <h5 class="card-title">Project 1</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card gradient-custom p-1" style="width: 18rem; background-color: #1b1b1c;">
+                            <div class="card-body " >
+                              <h5 class="card-title">Project 1</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card gradient-custom-4 p-1" style="width: 18rem; background-color: #1b1b1c;">
+                            <div class="card-body " >
+                              <h5 class="card-title">Project 1</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        
+        
+        
+
+        <div id="skillsButtonContent" style="padding:60px;">
+            <div class="container" style="width:50%;padding:30px;">
+               
+                    <div class="d-flex justify-content-around">
+                        <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/c++.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                            
+                        </div>
+
+                        <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/java.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                            
+                        </div>
+
+                        <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/python.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                            
+                        </div>
+                        <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/js.svg');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                            
+                        </div>
+                    </div>
+                
+                    
+                
+            </div>
+            <div class="container" style="width:50%;padding:30px;">
+               
+                <div class="d-flex justify-content-around">
+                    <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/angular.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                        
+                    </div>
+
+                    <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/springboot.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                        
+                    </div>
+
+                    <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/sql.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                        
+                    </div>
+                    <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/jenkins.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width:50%;padding:30px;">
+               
+                <div class="d-flex justify-content-around">
+                    <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/kubernetes.svg');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                        
+                    </div>
+
+                    <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/docker.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                        
+                    </div>
+
+                    <div class="p-1" style="width: 5rem; height:5rem;background-image: url('assets/images/aws.png');background-size: contain;background-repeat:no-repeat;background-position: right;" >
+                        
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </div>
+
 
         
+
+        
+
         <script>
             const splash=document.querySelector(".splash");
             document.addEventListener('DOMContentLoaded',(e)=>{
@@ -129,16 +260,26 @@
 
            function subheadingButtonClick(id){
             document.getElementById("projectsButton").classList.remove("gradient-custom");
-            
+            document.getElementById("projectsButtonContent").hidden=true;
             document.getElementById("workexButton").classList.remove("gradient-custom");
-            
+            document.getElementById("workexButtonContent").hidden=true;
             document.getElementById("educationButton").classList.remove("gradient-custom");
-          
+            document.getElementById("educationButtonContent").hidden=true;
+            document.getElementById("skillsButton").classList.remove("gradient-custom");
+            document.getElementById("skillsButtonContent").hidden=true;
             const ele = document.getElementById(id.id);
+            var temp = id.id+"Content";
+            document.getElementById(temp).hidden=false;
             ele.classList.add("gradient-custom");
 
 
-           } 
+           }
+           
+           function prepareContent(){
+            document.getElementById("projectsButtonContent").hidden=true;
+            document.getElementById("educationButtonContent").hidden=true;
+            document.getElementById("skillsButtonContent").hidden=true;
+           }
         </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
