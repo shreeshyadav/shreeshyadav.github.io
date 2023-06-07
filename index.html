@@ -32,20 +32,20 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto" style="padding:10px;">
                     <li class="nav-item">
-                        <a href="#about-me" class="nav-link">About Me</a>
+                        <a  onClick="navBarClick()" class="nav-link">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#education" class="nav-link">Work Experience</a>
+                        <a  onClick="navBarClick()" class="nav-link">Work Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">Education</a>
+                        <a  onClick="navBarClick()" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#skills" class="nav-link">Projects</a>
+                        <a  onClick="navBarClick()" class="nav-link">Projects</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Skills</a>
+                        <a onClick="navBarClick()" class="nav-link">Skills</a>
                     </li>
                 </ul>
             </div>
@@ -60,8 +60,7 @@
                     <div style="padding-left: 30px;">
                         <p>
                             <h1 style="display: inline;font-size: 70px;">Hi &#128075;, I am Shreesh</h1><br>
-                            <h5 style="padding-top: 30px;color: #b4b3b5">I am a Software Engineer and currently pursuing my Masters in Computer Science at University Of Southern California</h5>
-                           
+                            <h5 style="padding-top: 30px;color: #b4b3b5">I am a Software Engineer and currently pursuing my Masters in Computer Science at University Of Southern California</h5> 
                         </p>
                         
                     </div>
@@ -86,8 +85,7 @@
                     <h4>Associate Software Engineer, Fidelity Investments</h4>
                     <p class="small text-white-50 mb-4">August, 2022 - July, 2023</p>
                     <p>Responsible for designing and developing a full stack web application that handles flow of Fidelity's Institutional
-                        Clients using latest tech stack including Angular, SpringBoot, Express and Azure Kubernetes Service to improve
-                        the overallresponse time of the application by 60%.
+                        Clients.
                     </p>
                   </div>
                 </div>
@@ -97,7 +95,7 @@
                   <div class="card-body p-4" >
                     <h4>Software Engineer Intern, Fidelity Investments</h4>
                     <p class="small text-white-50 mb-4">January, 2022 - June, 2022</p>
-                    <p>Worked with the Workplace Inveting team.
+                    <p>Worked with the Workplace Investing team.
                     </p>
                   </div>
                 </div>
@@ -106,8 +104,8 @@
                 <div class="card gradient-custom">
                   <div class="card-body p-4" >
                     <h4>Software Engineer Intern, Fidelity Investments</h4>
-                    <p class="small text-white-50 mb-4">May 6</p>
-                    <p>Worked with the Workplace Investments team.
+                    <p class="small text-white-50 mb-4">June,2021 - July, 2021</p>
+                    <p>Worked with the Workplace Investing team.
                     </p>
                   </div>
                 </div>
@@ -153,25 +151,28 @@
                     <div class="d-flex justify-content-around">
                         <div class="card gradient-custom-4 p-1" style="width: 18rem; background-color: #1b1b1c;">
                             <div class="card-body">
-                              <h5 class="card-title">Project 1</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">Image Classification using CNN</h5>
+                              <p>Used Convnet to classify the images from the CIFAR100 dataset and integrating it with frontend using flask for
+                                interactive UI.</p>
+                              <a href="https://github.com/shreeshyadav/Image-Processing-Project" class="btn btn-primary" style="color: white">Code</a>
                             </div>
                         </div>
 
                         <div class="card gradient-custom p-1" style="width: 18rem; background-color: #1b1b1c;">
                             <div class="card-body " >
-                              <h5 class="card-title">Project 1</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">COVID-19 Dashboard</h5>
+                              <p>Developed a website to provide COVID-19 information like number of cases, nearby hospitals and recent trends
+                                using COVID-19 India APIs.</p>
+                              <a href="https://github.com/shreeshyadav/IWP-project" class="btn btn-primary" style="color: white">Code</a>
                             </div>
                         </div>
 
                         <div class="card gradient-custom-4 p-1" style="width: 18rem; background-color: #1b1b1c;">
                             <div class="card-body " >
-                              <h5 class="card-title">Project 1</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">School Management System</h5>
+                              <p>Developed ERP software for automating day-to-day activities of school like taking attendance, grading assignments
+                                and leave management.</p>
+                              <a href="https://github.com/shreeshyadav/School-ERP-backend" class="btn btn-primary" style="color: white">Code</a>
                             </div>
                         </div>
                     </div>
@@ -279,6 +280,10 @@
             document.getElementById("projectsButtonContent").hidden=true;
             document.getElementById("educationButtonContent").hidden=true;
             document.getElementById("skillsButtonContent").hidden=true;
+           }
+
+           function navBarClick(){
+
            }
         </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
